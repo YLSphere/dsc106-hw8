@@ -1,0 +1,59 @@
+
+<html>  
+<head>  
+<script type="text/javascript" src="app.js">
+    </script>  
+<link rel="stylesheet" href="styles.css">
+<script src="https://d3js.org/d3.v7.min.js"></script>
+
+</head>
+<body onload=assignment8()> 
+
+
+<div>
+<h2 class="section">Assignment 8</h2>
+Data visualization has a huge impact in the world of sports. Starting from scouting to post game analytics, data visualization is used almost everywhere. In this assignment we will visualize data from the NBA to help us scout two players. 
+<br>
+<div>
+<h3>Question 1:</h3>
+Geomaps are very useful when you want to see how data varies based on location. There are more than one ways of using Geomaps to visualize trends. In this question, we will create a geomap of the world using world.json provided in the starter code. You can use geoNaturalEarth1 projection for this question. In many cases, the data available to plot on geomap is sparse. This is one of those scenarios. From the given data we want to find the number of players who have score more than 15 average points (pts>15)  in each country. We will display these numbers on the top of the geomap using the circle element as shown in the expected output. The radius of the circle is scaled according to the number of players filtered in that country. This helps us shortlist the country we want to analyze further. For more details refer to expected_output.pdf. 
+<div id="q1">
+
+    </div>
+    <h4>Plot:</h4>
+    <div id="q1_plot" class="center_plot">
+    </div><br>
+    <div id="q1_answer" class="center_plot">
+    </div>
+</div>    
+</div>
+    
+<div>
+<h3>Question 2:</h3>
+For our next visualization we want to know which are the top colleges that produce the best basketball players. For this, we will create a streamgraph to visualize mean of points and assists contributed by each college. We will only plot the colleges which have more than 12 mean points (mean(pts)>12). Provide appropriate scale, axes, and legend to the plot. Do NOT hard code the scale/axes/legend in the html file. Associate different colors for profit and sales data points. For more details refer to expected_output.pdf. This plot will provide us with the best college that we should visit first to scout basketball players.
+<div id="q2">
+
+    </div>
+    <h4>Plot:</h4>
+    <div id="q2_plot" class="center_plot">
+    </div>
+</div>    
+
+<div>
+<h3>Question 3:</h3>
+Now that we have decided to go to Davidson college to scout their basketball team, we have received data on their college basketball team. We have shortlisted their top 5 players. Chemistry is a very important attribute in the game of basketball and it is one of the most crucial factor for us as a scout. In this question we create a network plot, to display the chemistry between these top 5 players. Data for this plot is provided in the app.js in question3(). The links are scaled using the chem attribute present in the data. For more details refer to expected_output.pdf.  
+
+<div id="q3">
+
+    </div>
+    <h4>Plot:</h4>
+    <div id="q3_plot" class="center_plot">
+    </div>
+</div>    
+   
+
+
+    
+   
+</body>  
+</html>  
